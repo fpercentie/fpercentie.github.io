@@ -2,6 +2,12 @@
 	background-color: #f4ee42;
 }
 
-#rolling_stone{
+.rolling_stone {
 	background-color: #41f4a6;
+	margin-bottom: 2%;
+} 
+
+.navbar-brand{
+	position: relative;
+	bottom: 25px;
 }
