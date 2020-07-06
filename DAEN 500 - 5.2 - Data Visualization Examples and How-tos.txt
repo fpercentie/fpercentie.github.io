@@ -1,0 +1,42 @@
+1) BBC
+
+The BBC has its own R package (bbplot) that creates charts in according to their style. There are examples of multi-layered bar charts on political elections.  Scatter plots displaying population growth by continent and whether that population growth is in an area that is vulnerable to global warming. There are only two functions bbc_style, which sets the color and text and is added to ggplot, and finalise_plot (note the British spelling of finalise) which is used in standard workflow and saves it to a filepath, and can add logos, name sources, and set dimensions.
+
+https://bbc.github.io/rcookbook/
+
+2) University of Virginia Weldon Cooper Center for Public Service Racial Dot Map
+
+This map is created using Python.  Python red the census block data for the 50 states and the District of Columbia.  They used GDAL and Shapely libraries to read the data and create the dots.  They then use the Google Maps API to display the map tiles.  There is another type of file .pde in their github that is supposed to be a Processing Development Environment that actually creates the map and is translated there by Java.  
+
+https://demographics.coopercenter.org/racial-dot-map
+https://github.com/unorthodox123/RacialDotMap/blob/master/dotfile.py
+
+Links to other data sources:
+https://demographics.coopercenter.org/guide-to-publicly-available-demographic-data/
+
+3) The Economist
+
+The Economist explains how they make the graphs and charts in their Graphic Detail page at the link below.  They take the data and after scrubbing it and asking if the data is interesting enough, use the ggplot package and aim to have a 2:1 ratio of data visualization vs. text.  They have a trademark color (Economist red #EC111A).
+
+https://medium.economist.com/a-year-in-graphic-detail-d1825b28e06f
+https://medium.economist.com/charting-new-territory-7f5afb293270
+
+4) FiveThirtyEight
+
+FiveThirtyEight is perhaps the quintessential website for modern data journalism, but their methodology often doesn't explain their visualization process or data scrubbing, just their sources.  Luckily, I was able to find a reddit post (5 years old, but probably still valuable) where an actual employee describes how they make their graphs.  They use 4 tools:
+
+1. Javascript libraries: D3 and topojson
+2. Chartbuilder: a D3-based chart generator
+3. R library: ggplot
+4. Adobe Illustrator
+
+I also found another website that tries to recreate a FiveThirtyEight data visualization by using the Python matplotlib library.
+
+https://www.reddit.com/r/statistics/comments/2jon2b/anyone_knows_how_are_made_the_graphs_on/clflnb7/
+https://www.dataquest.io/blog/making-538-plots/
+
+5) Basketball with Python
+
+Here is an example of how one can create various charts using Python, specifically with the help of the pandas, matplotlib, and plotly libraries.  Here the author JP Hwang makes bubble charts comparing shot distance and accuracy.  Then he uses the pickle library to create a hexbin shot chart of players' shots.
+ 
+https://towardsdatascience.com/interactive-basketball-data-visualizations-with-plotly-8c6916aaa59e
