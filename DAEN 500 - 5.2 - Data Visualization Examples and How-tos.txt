@@ -1,3 +1,5 @@
+Read at least 5 articles relating to visualization projects, use cases, etc., particularly looking for ways data scientists used R and/or Python in the process.  lIST the articles in your GitHub site & Record notes in your Reflections Journal.  Such as:  What are the tips you've learned?  Any very special visualizations you might share with classmates?  (Feel free to post on the DAEN 500 Discussion Board.)
+
 1) BBC
 
 The BBC has its own R package (bbplot) that creates charts in according to their style. There are examples of multi-layered bar charts on political elections.  Scatter plots displaying population growth by continent and whether that population growth is in an area that is vulnerable to global warming. There are only two functions bbc_style, which sets the color and text and is added to ggplot, and finalise_plot (note the British spelling of finalise) which is used in standard workflow and saves it to a filepath, and can add logos, name sources, and set dimensions.
